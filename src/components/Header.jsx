@@ -62,7 +62,7 @@ const Header = () => {
 						</Link>
 					</li>
 				</ul>
-				<div className='lg:hidden'>
+				<div className='lg:hidden z-50'>
 					<button
 						aria-label='Open Menu'
 						title='Open Menu'
