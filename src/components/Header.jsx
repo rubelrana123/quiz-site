@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavL, NavLink } from 'react-router-dom';
 
 const Header = () => {
 	// const [cart, setCart] = useContext(CartContext);
@@ -7,39 +7,39 @@ const Header = () => {
 	return (
 		<div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
 			<div className='relative flex items-center justify-between '>
-				<Link
+				<NavLink
 					to='/'
 					aria-label='Quizz'
 					title='Quizz'
 					className='inline-flex items-center'
 				>
-					<span className='ml-2 text-2xl font-extrabold tracking-wide  text-blue-700 uppercase'>
+					<span className='ml-2 text-4xl font-extrabold tracking-wide  text-blue-700 uppercase'>
 						Quizz
 					</span>
-				</Link>
+				</NavLink>
 				<ul className='flex items-center hidden space-x-8 lg:flex'>
 					<li>
-						<Link
+						<NavLink
 							to='/home'
 							aria-label='Home'
 							title='Home'
 							className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 						>
 							Home
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link
+						<NavLink
 							to='/statistics'
 							aria-label='Statistics'
 							title='Statistics'
 							className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 						>
 							Statistics
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link
+						<NavLink
 							to='/blog'
 							aria-label='Blog'
 							title='Blog'
@@ -49,17 +49,17 @@ const Header = () => {
 								<p>Blog</p>
 								<p className='absolute bottom-5 left-9'></p>
 							</div>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link
+						<NavLink
 							to='/about'
 							aria-label='About Us'
 							title='About Us'
 							className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 						>
 							About Us
-						</Link>
+						</NavLink>
 					</li>
 				</ul>
 				<div className='lg:hidden z-50'>
@@ -89,7 +89,7 @@ const Header = () => {
 							<div className='p-5 bg-white border rounded shadow-sm'>
 								<div className='flex items-center justify-between mb-4'>
 									<div>
-										<Link
+										<NavLink
 											to='/'
 											aria-label='Company'
 											title='Company'
@@ -98,7 +98,7 @@ const Header = () => {
 											<span className='ml-2 text-2xl font-bold tracking-wide text-blue-800 uppercase'>
 												Quizz
 											</span>
-										</Link>
+										</NavLink>
 									</div>
 									<div>
 										<button
@@ -119,27 +119,27 @@ const Header = () => {
 								<nav>
 									<ul className='space-y-4'>
 										<li>
-											<Link
+											<NavLink
 												to='/home'
 												aria-label='Home'
 												title='Home'
 												className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 											>
 												Home
-											</Link>
+											</NavLink>
 										</li>
 										<li>
-											<Link
+											<NavLink
 												to='/statistics'
 												aria-label='Statistics'
 												title='Statistics'
 												className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 											>
 												Statistics
-											</Link>
+											</NavLink>
 										</li>
 										<li>
-											<Link
+											<NavLink
 												to='/blog'
 												aria-label='Blog'
 												title='Blog'
@@ -149,17 +149,17 @@ const Header = () => {
 													<p>Blog</p>
 													<p className='absolute bottom-5 left-9'></p>
 												</div>
-											</Link>
+											</NavLink>
 										</li>
 										<li>
-											<Link
+											<NavLink
 												to='/about'
 												aria-label='About Us'
 												title='About Us'
 												className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 											>
 												About Us
-											</Link>
+											</NavLink>
 										</li>
 									</ul>
 								</nav>

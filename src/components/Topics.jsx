@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Topics = ({topic}) => {
   console.log(topic)
@@ -15,12 +16,14 @@ const Topics = ({topic}) => {
 				<p className='font-semibold text-xl text-blue-800'>Quiz: {total}</p>
 			</div>
 
-			<button
-				type='button'
-				className='px-8 block w-full mt-4 py-3  rounded-full bg-blue-400 text-2xl text-white hover:bg-cyan-400'
-			>
-				Quiz Start
-			</button>
+			<Link to={`/topic/${id}`}>
+				<button
+					type='button'
+					className='px-8 block w-full mt-4 py-3  rounded-full bg-blue-400 text-2xl text-white hover:bg-cyan-400'
+				>
+					Quiz Start
+				</button>
+			</Link>
 		</div>
 	);
 };
