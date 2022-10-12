@@ -35,10 +35,16 @@ const QuizDetails = ({ questionData }) => {
 					{options.map((option) => (
 						<div
 							onClick={() => handleCorrecctAns(option)}
-							className='p-3 bg-gray-400 rounded-md cursor-pointer'
-					
+							className='flex cursor pointer bg-blue-500 p-3'
 						>
-							{option}
+							<input
+								className='text-2xl'
+								type='radio'
+								id={option}
+								name='fav_language'
+								value='HTML'
+							/>
+							  <label for={option}>{option}</label>
 						</div>
 					))}
 				</div>

@@ -121,12 +121,12 @@ const Header = () => {
 										<ul className='space-y-4'>
 											<li>
 												<NavLink
-													to='/home'
-													aria-label='Home'
-													title='Home'
+													to='/topic'
+													aria-label='topic'
+													title='Topics'
 													className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
 												>
-													Home
+													Topics
 												</NavLink>
 											</li>
 											<li>
