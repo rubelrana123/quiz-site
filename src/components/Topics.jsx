@@ -7,7 +7,7 @@ const Topics = ({topic}) => {
   return (
 		<div className='bg-purple-100 p-6 rounded shadow-lg'>
 			<img
-				className='object-cover w-full h-40 mb-6 rounded shadow-lg md:h-64 xl:h-80'
+				className='object-cover w-full h-40 mb-6 rounded shadow-lg md:h-64 xl:h-72'
 				src={logo}
 				alt=''
 			/>
