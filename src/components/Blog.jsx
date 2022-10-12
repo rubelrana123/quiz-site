@@ -24,7 +24,7 @@ const Blog = () => {
     <div className='w-[90%] mt-5 h-[68vh] mx-auto'>
 
       {
-        data.map( info => <BlogQuestion info = {info}></BlogQuestion> )
+        data.map( (info) => <BlogQuestion key={info.id} info = {info}></BlogQuestion> )
       }
       
     </div>

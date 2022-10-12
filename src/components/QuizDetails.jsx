@@ -2,16 +2,11 @@ import React, { useState } from 'react';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { toast } from 'react-toastify';
 const QuizDetails = ({ questionData,correct,wrong, setCorrect, setWrong }) => {
-;
-console.log("question data"+ questionData)
+
 	const [open, setOpen] = useState(true);
-	const {color , setColor } = useState('red');
 
 	const { question, options, correctAnswer } = questionData;
-	
-	// const splitQuestion = question.split('<p> </p>');
-  // console.log('question' +  question)
-  // console.log('splitQuestion' + splitQuestion);
+
 	const handleCorrecctAns = (option) => {
 
 
@@ -23,7 +18,7 @@ console.log("question data"+ questionData)
 			setWrong(wrong + 1);
 		}
 	};
-	console.log(questionData);
+
 	return (
 		<div className='w-3/4 mx-auto p-10 '>
 			<div className='p-8 bg-blue-200'>
@@ -51,11 +46,7 @@ console.log("question data"+ questionData)
 						<div
 							onClick={() => handleCorrecctAns(option)}
 							key={option}
-							className={
-								color
-									? 'bg-blue-300 py-3 mx-auto px-4 w-3/4 rounded hover:bg-red-500  ease-in duration-300 cursor-pointer active:bg-white'
-									: 'bg-blue-300 py-3 mx-auto px-4 w-3/4 rounded hover:bg-green-500  ease-in duration-300 cursor-pointer  active:bg-red-600'
-							}
+							className='bg-blue-300 py-3 mx-auto px-4 w-3/4 rounded hover:bg-red-500  ease-in duration-300 cursor-pointer active:bg-white'
 						>
 							{option}
 						</div>

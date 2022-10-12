@@ -5,7 +5,7 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer,  Tooltip, XAxis, Y
 const Statistics = () => {
 	const loaderData = useLoaderData();
 	const topics = loaderData.data;
-	console.log(topics);
+	// console.log(topics);
 	return (
 		<div>
 			<h1 className=' text-4xl font-semibold text-center text-blue-600'>
