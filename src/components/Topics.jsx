@@ -16,7 +16,7 @@ const Topics = ({topic}) => {
 				<p className='font-semibold text-xl text-blue-800'>Quiz: {total}</p>
 			</div>
 
-			<Link to={`/topic/${id}`}>
+			<Link to={`../quiz/${id}`}>
 				<button
 					type='button'
 					className='px-8 block w-full mt-4 py-3  rounded-full bg-blue-400 text-2xl text-white hover:bg-cyan-400'
