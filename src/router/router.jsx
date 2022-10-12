@@ -6,6 +6,7 @@ import Statistics from '../components/Statistics';
 import { loadedTopicData } from '../Loader';
 import Quiz from '../components/Quiz';
 import Blog from '../components/Blog';
+import About from '../components/About';
 
 export const router = createBrowserRouter([
 	{
@@ -30,6 +31,7 @@ export const router = createBrowserRouter([
 				element: <Quiz></Quiz>,
 			},
 			{ path: '/blog', element: <Blog></Blog> },
+			{ path: '/about', element: <About></About> },
 		],
 	},
 ]);
