@@ -36,7 +36,7 @@ const Statistics = () => {
 					</AreaChart>
 				</ResponsiveContainer>
 			</div>
-			);
+		
 		</div>
 	);
 };

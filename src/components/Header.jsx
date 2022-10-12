@@ -21,12 +21,16 @@ const Header = () => {
 					<ul className='flex items-center hidden space-x-8 lg:flex'>
 						<li>
 							<NavLink
-								to='/topic'
-								aria-label='topic'
-								title='Topic'
-								className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+								to='/home'
+								aria-label='home'
+								title='home'
+								className={({ isActive }) =>
+									isActive
+										? 'font-medium tracking-wide  border-b-2 border-red-700   text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+										: 'font-medium tracking-wide text-gray-700  transition-colors duration-200 hover:text-deep-purple-accent-400'
+								}
 							>
-								Topics
+								Home
 							</NavLink>
 						</li>
 						<li>
@@ -34,7 +38,11 @@ const Header = () => {
 								to='/statistics'
 								aria-label='Statistics'
 								title='Statistics'
-								className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+								className={({ isActive }) =>
+									isActive
+										? 'font-medium tracking-wide text-gray-700 border-red-700    transition-colors duration-200   border-b-2   hover:text-deep-purple-accent-400'
+										: 'font-medium tracking-wide text-gray-700   transition-colors duration-200 hover:text-deep-purple-accent-400'
+								}
 							>
 								Statistics
 							</NavLink>
@@ -44,12 +52,13 @@ const Header = () => {
 								to='/blog'
 								aria-label='Blog'
 								title='Blog'
-								className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+								className={({ isActive }) =>
+									isActive
+										? 'font-medium tracking-wide  border-b-2  border-red-700  text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+										: 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+								}
 							>
-								<div className='relative py-3'>
-									<p>Blog</p>
-									<p className='absolute bottom-5 left-9'></p>
-								</div>
+								Blog
 							</NavLink>
 						</li>
 						<li>
@@ -57,7 +66,11 @@ const Header = () => {
 								to='/about'
 								aria-label='About Us'
 								title='About Us'
-								className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+								className={({ isActive }) =>
+									isActive
+										? 'font-medium tracking-wide  border-b-2  border-red-700  text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+										: 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+								}
 							>
 								About Us
 							</NavLink>
@@ -121,12 +134,16 @@ const Header = () => {
 										<ul className='space-y-4'>
 											<li>
 												<NavLink
-													to='/topic'
-													aria-label='topic'
-													title='Topics'
-													className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													to='/home'
+													aria-label='home'
+													title='Home'
+													className={({ isActive }) =>
+														isActive
+															? 'font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-deep-purple-accent-400'
+															: 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													}
 												>
-													Topics
+													Home
 												</NavLink>
 											</li>
 											<li>
@@ -134,7 +151,11 @@ const Header = () => {
 													to='/statistics'
 													aria-label='Statistics'
 													title='Statistics'
-													className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													className={({ isActive }) =>
+														isActive
+															? 'font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-deep-purple-accent-400'
+															: 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													}
 												>
 													Statistics
 												</NavLink>
@@ -144,12 +165,13 @@ const Header = () => {
 													to='/blog'
 													aria-label='Blog'
 													title='Blog'
-													className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													className={({ isActive }) =>
+														isActive
+															? 'font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-deep-purple-accent-400'
+															: 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													}
 												>
-													<div className='relative py-3'>
-														<p>Blog</p>
-														<p className='absolute bottom-5 left-9'></p>
-													</div>
+													Blog
 												</NavLink>
 											</li>
 											<li>
@@ -157,7 +179,11 @@ const Header = () => {
 													to='/about'
 													aria-label='About Us'
 													title='About Us'
-													className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													className={({ isActive }) =>
+														isActive
+															? 'font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-deep-purple-accent-400'
+															: 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+													}
 												>
 													About Us
 												</NavLink>

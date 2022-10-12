@@ -5,6 +5,7 @@ const QuizDetails = ({ questionData,correct,wrong, setCorrect, setWrong }) => {
 ;
 console.log("question data"+ questionData)
 	const [open, setOpen] = useState(true);
+	const {color , setColor } = useState('red');
 
 	const { question, options, correctAnswer } = questionData;
 	
@@ -12,6 +13,8 @@ console.log("question data"+ questionData)
   // console.log('question' +  question)
   // console.log('splitQuestion' + splitQuestion);
 	const handleCorrecctAns = (option) => {
+
+
 		if (option === correctAnswer) {
 			toast.success('Correct Answer', { autoClose: 200 });
 			setCorrect(correct + 1);
@@ -26,9 +29,7 @@ console.log("question data"+ questionData)
 			<div className='p-8 bg-blue-200'>
 				<div className='flex justify-between'>
 					<h1 className='md:text-2xl text-xl text-black'>
-						<span className='text-red-500 text-2xl'>
-							Question :
-						</span>
+						<span className='text-red-500 text-2xl'>Question :</span>
 						{question}
 					</h1>
 
@@ -50,7 +51,11 @@ console.log("question data"+ questionData)
 						<div
 							onClick={() => handleCorrecctAns(option)}
 							key={option}
-							className='bg-blue-300 py-3 mx-auto px-4 w-3/4 rounded hover:bg-red-500 hover:text-white ease-in duration-300 cursor-pointer'
+							className={
+								color
+									? 'bg-blue-300 py-3 mx-auto px-4 w-3/4 rounded hover:bg-red-500  ease-in duration-300 cursor-pointer active:bg-white'
+									: 'bg-blue-300 py-3 mx-auto px-4 w-3/4 rounded hover:bg-green-500  ease-in duration-300 cursor-pointer  active:bg-red-600'
+							}
 						>
 							{option}
 						</div>
